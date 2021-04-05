@@ -1,4 +1,4 @@
-package com.kobe;
+package com.clima;
 
 import android.app.Application;
 import android.content.Context;

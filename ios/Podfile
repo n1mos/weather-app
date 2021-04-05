@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'Kobe' do
-  # Pods for Kobe
+target 'Clima' do
+  # Pods for Clima
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,15 +34,15 @@ target 'Kobe' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'KobeTests' do
+  target 'ClimaTests' do
     inherit! :search_paths
     # Pods for testing
   end
   use_native_modules!
 end
-target 'Kobe-tvOS' do
-  # Pods for Kobe-tvOS
-  target 'Kobe-tvOSTests' do
+target 'Clima-tvOS' do
+  # Pods for Clima-tvOS
+  target 'Clima-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

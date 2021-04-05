@@ -127,7 +127,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.kobe"
+        applicationId "com.clima"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

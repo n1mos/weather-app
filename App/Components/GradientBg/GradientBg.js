@@ -10,6 +10,10 @@ const GradientBg = ({ weather, style, children }) => {
   }
 
   const getGradient = () => {
+    if (!weather) {
+      return GRADIENTS.clear
+    }
+
     const weatherId = weather.current.weather[0].id
     const curHr = new Date().getHours()
 
