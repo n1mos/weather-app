@@ -1,70 +1,63 @@
+# Weather App
+Este projeto foi um code challenge apresentado para mim pela [Platform Builders](https://platformbuilders.io/) e consiste de um app [React Native](https://facebook.github.io/react-native/) que exibe informações climáticas da localização atual do usuário em lindos degradês que mudam conforme o horário e a condição de clima atual. Todos os dados são providenciados pela [API Open Weather]('https://openweathermap.org/). 
+
 <div align="center">
-    <img src="App/Assets/Images/logo.png" alt="Logo" width="120">
+    <img src="ss1.png" alt="Logo" width="100%" style="margin-bottom: 5px">
+    <img src="ss2.png" alt="Logo" width="100%" style="margin-bottom: 15px">
 </div>
-
-# Kobe Code Challenge
-
-This project is a code challenge presented to me by [Kobe.io](https://kobe.io/) and it consists of a [React Native](https://facebook.github.io/react-native/) app that allows the user to scroll through upcoming movies provided by [TMDb](https://developers.themoviedb.org/3) and view details like movie name, genre, release date and overview.
-
 
 ## Layout
 
-- [`App/Components`](App/Components): presentational components
-- [`App/Containers`](App/Containers): container components
-- [`App/Config`](App/Config): configuration of the application
+- [`App/Components`](App/Components): componentes de apresentação
+- [`App/Containers`](App/Containers): componentes container
+- [`App/Config`](App/Config): configuração do app
 - [`App/Sagas`](App/Sagas): redux sagas
-- [`App/Assets`](App/Assets): assets (images, videos etc)
-- [`App/Services`](App/Services): application services
-- [`App/Theme`](App/Theme): styles for the application
-- [`App/Navigators`](App/Navigators): react navigation navigators 
-- [`App/Stores`](App/Stores): redux actions, reducers and stores
+- [`App/Assets`](App/Assets): assets (imagens, videos etc)
+- [`App/Services`](App/Services): serviços do app
+- [`App/Theme`](App/Theme): estilos do app
+- [`App/Navigators`](App/Navigators): navigators da react navigation 
+- [`App/Stores`](App/Stores): redux actions, reducers e stores
 
 
-## Dependencies
+## Dependências
 
 - [React Native](https://facebook.github.io/react-native/)
 - [React Navigation](https://reactnavigation.org/)
 - [Redux](https://redux.js.org/)
 - [Redux Sagas](https://redux-saga.js.org)
 - [Redux Persist](https://github.com/rt2zz/redux-persist)
+- [React-Native Chart Kit](https://github.com/indiespirit/react-native-chart-kit)
+- [React-Native Get Location](https://github.com/douglasjunior/react-native-get-location)
+- [React-Native Linear Gradient](https://github.com/react-native-linear-gradient/react-native-linear-gradient)
 - [reduxsauce](https://github.com/infinitered/reduxsauce)
 - [prettier](https://prettier.io/)
 - [axios](https://github.com/axios/axios)
 
 
-## Installation
+## Instalação
 
-1. Clone this repository.
-2. Install the dependencies by running `yarn`.
+1. Clone este repositório.
+2. Instale as dependências rodando `yarn` ou `npm install`.
 
 ### Android
 
-  - The first time you run the project, you need to generate a debug key with:
-    - `cd android/app`
-    - `keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000`
-
-  - Now you can start the bundler and run the app.
-    - `yarn start`
-    - `yarn android`
+  - `yarn start`
+  - `yarn android`
 
 ### iOS
 
 - `cd ios`
-- You need to install the pod dependencies.
+- Você precisa instalar as dependências pod.
   - `pod install`
 
-- Now you can start the bundler and run the app.
+- Agora você pode iniciar o bundler e instalar o app.
   - `yarn start`
   - `yarn ios`
 
-## Testing
+## Testes
 
-Testing is done with [jest](https://jestjs.io/) framework and [enzyme](https://airbnb.io/enzyme/) testing utility that makes it easier to test React Components.
+Testes são feitos com [jest](https://jestjs.io/) framework e [enzyme](https://airbnb.io/enzyme/) que torna fácil testar componentes React.
 
 
-### Running tests
-- `yarn test` or `yarn test -u` if you've made any updates.
-
-## Improvements
-- Header search input not working, `/movies/upcoming` endpoint doesn't feature a text search function, would need to use a different endpoint.
-- Images could be served with higher resolution for retina displays.
+### Rodando testes
+- `yarn test` ou `yarn test -u` se você fez alguma alteração.
